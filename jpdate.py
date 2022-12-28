@@ -44,7 +44,7 @@ month_dict = {
 }
 month_romaji = month_dict[d2.month]
 day_dict = {
-	1: "いちにち",
+	1: "ついたち",
 	2:"ふつか",
 	3:"みっか",
 	4:"よっか",

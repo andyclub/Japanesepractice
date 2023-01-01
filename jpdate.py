@@ -25,8 +25,12 @@ kana_dict = {
 	8: "はち",
 	9: "きゅう(く)"
 }
-for digit in str(d2.year):
-    year_romaji += kana_dict[int(digit)]
+if int(str(d2.year)[2]) > 0 :
+	if int(str(d2.year)[2]) == 1:
+		year_romaji += "じゅう"
+	else:
+		year_romaji += kana_dict[int(str(d2.year)[2])] + "じゅう"
+year_romaji += kana_dict[int(str(d2.year)[3])]
 
 month_dict = {
 	1:"いちがつ",
